@@ -2,14 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://d34oi0sgy0ers" path="res://89405cd488cd6ec85d7ee183461001ce.jpg" id="1_c7s6e"]
 [ext_resource type="Texture2D" uid="uid://k5f8rd6cddef" path="res://104855ff7b1433a5ca0d6c2ac30f7d43.jpg" id="2_wijl4"]
-[ext_resource type="Script" uid="uid://i3uf4aivrl2m" path="res://omni_light_3d.gd" id="3_e0an3"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_1ycum"]
-size = Vector3(298.31113, 0.001, 250.3498)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tfh3x"]
-albedo_texture_force_srgb = true
-uv1_scale = Vector3(3.005, 3.005, 3.005)
+[ext_resource type="Texture2D" uid="uid://c880if0eqluh4" path="res://ongthonggio.jpg" id="3_p5pve"]
+[ext_resource type="PackedScene" uid="uid://cktbcubns0r5w" path="res://sci-fi_door_spaceship_indweller.glb" id="4_p5pve"]
+[ext_resource type="PackedScene" uid="uid://cbnypupywn7lt" path="res://sci-fi_doors.glb" id="5_urblq"]
+[ext_resource type="PackedScene" uid="uid://c1kv1cfyu0sr2" path="res://sci-fi_terminal.glb" id="6_iw27f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ycum"]
 albedo_texture = ExtResource("1_c7s6e")
@@ -17,7 +13,8 @@ uv1_scale = Vector3(17.329, 16.821, 17.329)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e0an3"]
 albedo_texture = ExtResource("2_wijl4")
-uv1_scale = Vector3(5.5, 5.5, 5.5)
+uv1_scale = Vector3(0.14, 0.14, 0.14)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0svn"]
 albedo_texture = ExtResource("2_wijl4")
@@ -28,14 +25,23 @@ albedo_texture = ExtResource("2_wijl4")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fqhs2"]
 albedo_color = Color(0.11764706, 0.13725491, 0.16470589, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6qsgm"]
+albedo_color = Color(0.11764706, 0.13725491, 0.16470589, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xte17"]
 albedo_texture = ExtResource("2_wijl4")
+uv1_scale = Vector3(0.04, 0.04, 0.04)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p7asu"]
 albedo_texture = ExtResource("2_wijl4")
+uv1_scale = Vector3(0.22, 0.22, 0.22)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yu2si"]
 albedo_texture = ExtResource("2_wijl4")
+uv1_scale = Vector3(0.06, 0.06, 0.06)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3ixa"]
 albedo_texture = ExtResource("2_wijl4")
@@ -48,6 +54,8 @@ albedo_texture = ExtResource("1_c7s6e")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kj7vb"]
 albedo_texture = ExtResource("2_wijl4")
+uv1_scale = Vector3(0.085, 0.085, 0.085)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgpxx"]
 albedo_texture = ExtResource("2_wijl4")
@@ -70,16 +78,28 @@ albedo_texture = ExtResource("1_c7s6e")
 uv1_scale = Vector3(0.085, 0.085, 0.085)
 uv1_triplanar = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ooc2g"]
+albedo_texture = ExtResource("3_p5pve")
+uv1_scale = Vector3(1.01, 1.01, 1.01)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2wwcf"]
+albedo_texture = ExtResource("3_p5pve")
+uv1_scale = Vector3(1.01, 1.01, 1.01)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_urblq"]
 albedo_texture = ExtResource("2_wijl4")
 uv1_scale = Vector3(0.34, 0.34, 0.34)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bdbiy"]
 albedo_texture = ExtResource("2_wijl4")
+uv1_scale = Vector3(0.635, 0.635, 0.635)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iw27f"]
 albedo_texture = ExtResource("2_wijl4")
 uv1_scale = Vector3(0.23, 0.23, 0.23)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3hch"]
 albedo_texture = ExtResource("1_c7s6e")
@@ -90,6 +110,8 @@ albedo_texture = ExtResource("2_wijl4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlo83"]
 albedo_texture = ExtResource("2_wijl4")
+uv1_scale = Vector3(0.095, 0.095, 0.095)
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2xilk"]
 albedo_texture = ExtResource("2_wijl4")
@@ -123,6 +145,9 @@ uv1_scale = Vector3(4.12, 4.12, 4.12)
 [sub_resource type="BoxShape3D" id="BoxShape3D_2xilk"]
 size = Vector3(7.184554, 1.7744434, 31.257324)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_e0an3"]
+size = Vector3(7.184554, 1.7744434, 27.326904)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8aj5u"]
 albedo_color = Color(0.26657534, 0.26657513, 0.2665752, 1)
 
@@ -146,11 +171,6 @@ albedo_color = Color(0.12941177, 0.13725491, 0.16470589, 1)
 
 [node name="cai nen" type="StaticBody3D" unique_id=706484653]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=467296181]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2418709, 0.44166756, -266.77954)
-mesh = SubResource("BoxMesh_1ycum")
-surface_material_override/0 = SubResource("StandardMaterial3D_tfh3x")
-
 [node name="Node3D" type="Node3D" parent="." unique_id=238291191]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Node3D" unique_id=1588856415]
@@ -159,7 +179,7 @@ use_collision = true
 size = Vector3(21.725403, 1, 10.471802)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="Node3D" unique_id=1840375205]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.51253, 0.4882946, -45.950264)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.81393, 0.4882946, -45.950264)
 use_collision = true
 size = Vector3(261.60907, 0.3647461, 144.85484)
 material = SubResource("StandardMaterial3D_1ycum")
@@ -213,24 +233,28 @@ size = Vector3(0.73071873, 58.281746, 98.86235)
 material = SubResource("StandardMaterial3D_fqhs2")
 
 [node name="CSGBox3D87" type="CSGBox3D" parent="Node3D" unique_id=568556977]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -63.839527, 22.535757, -44.66027)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -63.839527, 22.535757, -44.72666)
 use_collision = true
-size = Vector3(0.001, 14.616037, 109.10846)
+size = Vector3(0.001, 14.616037, 109.24124)
+material = SubResource("StandardMaterial3D_6qsgm")
 
 [node name="CSGBox3D89" type="CSGBox3D" parent="Node3D" unique_id=1992304097]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -80.77139, 22.535757, 2.0519028)
 use_collision = true
 size = Vector3(0.001, 48.47977, 15.684113)
+material = SubResource("StandardMaterial3D_6qsgm")
 
 [node name="CSGBox3D157" type="CSGBox3D" parent="Node3D" unique_id=1314159004]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -175.6774, 22.535755, 2.6420174)
 use_collision = true
 size = Vector3(0.001, 144.08644, 57.655952)
+material = SubResource("StandardMaterial3D_6qsgm")
 
 [node name="CSGBox3D88" type="CSGBox3D" parent="Node3D" unique_id=633860086]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -103.78917, 22.535755, -111.54803)
 use_collision = true
 size = Vector3(0.001, 94.51533, 24.612366)
+material = SubResource("StandardMaterial3D_6qsgm")
 
 [node name="CSGBox3D55" type="CSGBox3D" parent="Node3D" unique_id=830590282]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 37.17449, 10.905855, -50.643036)
@@ -250,10 +274,28 @@ use_collision = true
 size = Vector3(10.649002, 50.01716, 20.12224)
 material = SubResource("StandardMaterial3D_e0an3")
 
+[node name="CSGBox3D243" type="CSGBox3D" parent="Node3D" unique_id=812229695]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 29.039865, 9.193118, 0.21873856)
+use_collision = true
+size = Vector3(3.4343643, 5.6335793, 8.452679)
+material = SubResource("StandardMaterial3D_e0an3")
+
 [node name="CSGBox3D52" type="CSGBox3D" parent="Node3D" unique_id=1507851450]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -26.172634, 5.1957326, -10.771691)
 use_collision = true
 size = Vector3(10.649002, 21.790789, 70.2664)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D244" type="CSGBox3D" parent="Node3D" unique_id=78874403]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -10.36783, 8.663891, -44.167473)
+use_collision = true
+size = Vector3(3.7126846, 13.842838, 3.2757797)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D245" type="CSGBox3D" parent="Node3D" unique_id=89596930]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -4.352189, 8.725581, -50.891895)
+use_collision = true
+size = Vector3(3.589304, 1.8115559, 10.338061)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D50" type="CSGBox3D" parent="Node3D" unique_id=452698450]
@@ -299,9 +341,9 @@ size = Vector3(23.593622, 10.607571, 0.8691697)
 material = SubResource("StandardMaterial3D_p7asu")
 
 [node name="CSGBox3D94" type="CSGBox3D" parent="Node3D" unique_id=1193332289]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 36.592678, 17.725246, -26.522985)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 40.559013, 15.587835, -26.522985)
 use_collision = true
-size = Vector3(10.13949, 14.639431, 0.87591267)
+size = Vector3(5.864667, 2.7265081, 0.87591267)
 material = SubResource("StandardMaterial3D_yu2si")
 
 [node name="CSGBox3D42" type="CSGBox3D" parent="Node3D" unique_id=135558186]
@@ -359,9 +401,9 @@ size = Vector3(11.259214, 16.378386, 42.574993)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D64" type="CSGBox3D" parent="Node3D" unique_id=996024595]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 126.23393, 6.1033316, -55.674313)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 126.186966, 6.1033316, -55.674313)
 use_collision = true
-size = Vector3(11.3624115, 19.00353, 1.0162685)
+size = Vector3(11.3624115, 19.09747, 1.0162685)
 material = SubResource("StandardMaterial3D_w3ixa")
 
 [node name="CSGBox3D71" type="CSGBox3D" parent="Node3D" unique_id=872930076]
@@ -377,9 +419,9 @@ size = Vector3(11.3624115, 0.64178467, 24.69112)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D65" type="CSGBox3D" parent="Node3D" unique_id=1385460373]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 115.088715, 8.6731415, -55.674313)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 115.088715, 8.256672, -55.674313)
 use_collision = true
-size = Vector3(6.2227917, 8.922087, 1.0162685)
+size = Vector3(7.055732, 8.922087, 1.0162685)
 material = SubResource("StandardMaterial3D_07o3c")
 
 [node name="CSGBox3D62" type="CSGBox3D" parent="Node3D" unique_id=1399200316]
@@ -395,9 +437,9 @@ size = Vector3(11.86581, 4.326439, 41.931236)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D60" type="CSGBox3D" parent="Node3D" unique_id=140516473]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 143.63591, 8.56686, -97.51226)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 143.63591, 8.26204, -97.51226)
 use_collision = true
-size = Vector3(6.228961, 15.4440775, 1.045085)
+size = Vector3(6.8386016, 15.4440775, 1.045085)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D59" type="CSGBox3D" parent="Node3D" unique_id=584815190]
@@ -451,6 +493,7 @@ material = SubResource("StandardMaterial3D_05x41")
 transform = Transform3D(0.87500864, 0.48410732, 0, -0.48410732, 0.87500864, 0, 0, 0, 1, -47.115414, 16.180157, -50.865772)
 use_collision = true
 size = Vector3(22.885319, 1.0906372, 10.240637)
+material = SubResource("StandardMaterial3D_6qsgm")
 
 [node name="CSGBox3D74" type="CSGBox3D" parent="Node3D" unique_id=530453762]
 transform = Transform3D(0.87500864, 0.48410732, 0, -0.48410732, 0.87500864, 0, 0, 0, 1, -45.11435, 9.713066, -55.72775)
@@ -547,9 +590,9 @@ size = Vector3(33.24037, 12.586029, 1.1091728)
 material = SubResource("StandardMaterial3D_kj7vb")
 
 [node name="CSGBox3D85" type="CSGBox3D" parent="Node3D" unique_id=1369189606]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -110.22954, 16.177206, -99.390366)
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -110.22954, 16.374449, -99.390366)
 use_collision = true
-size = Vector3(81.34968, 12.586029, 1.1091728)
+size = Vector3(81.34968, 12.980515, 1.1091728)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D86" type="CSGBox3D" parent="Node3D" unique_id=1357453357]
@@ -595,15 +638,525 @@ size = Vector3(34.42987, 1, 16.810421)
 material = SubResource("StandardMaterial3D_oysan")
 
 [node name="CSGBox3D96" type="CSGBox3D" parent="Node3D" unique_id=693803269]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -172.55502, 11.288418, -0.34281254)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -172.62479, 11.288418, -0.34281254)
 use_collision = true
-size = Vector3(136.65115, 1, 60.04585)
+size = Vector3(136.51161, 1, 60.04585)
 material = SubResource("StandardMaterial3D_0t07s")
 
 [node name="CSGBox3D32" type="CSGBox3D" parent="Node3D" unique_id=153423645]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.58899, 11.288418, -103.96642)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.812096, 11.288418, -104.81222)
 use_collision = true
-size = Vector3(81.10425, 1, 12.808882)
+size = Vector3(81.55046, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D165" type="CSGBox3D" parent="Node3D" unique_id=212345964]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -190.71548, 22.535755, -105.520424)
+use_collision = true
+size = Vector3(0.001, 81.918304, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D166" type="CSGBox3D" parent="Node3D" unique_id=1806347831]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -190.85735, 16.374449, -97.07321)
+use_collision = true
+size = Vector3(81.34968, 12.980515, 5.7434797)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D246" type="CSGBox3D" parent="Node3D" unique_id=1547204209]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -150.97998, 20.431963, -105.149345)
+use_collision = true
+size = Vector3(1.5949488, 4.865484, 12.169024)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D251" type="CSGBox3D" parent="Node3D" unique_id=718809704]
+transform = Transform3D(-4.3711385e-08, 0, -1, 0, 0.9999999, 0, 0.9999999, 0, -4.371139e-08, -63.388023, 20.431963, -124.40373)
+use_collision = true
+size = Vector3(0.9831433, 4.865484, 12.169024)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D252" type="CSGBox3D" parent="Node3D" unique_id=2125979682]
+transform = Transform3D(-4.3711385e-08, 0, -1, 0, 0.9999999, 0, 0.9999999, 0, -4.371139e-08, -63.388023, 17.34438, -124.40471)
+use_collision = true
+size = Vector3(0.9811902, 11.040652, 12.169024)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D167" type="CSGBox3D" parent="Node3D" unique_id=1220412457]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -190.85735, 16.177206, -112.05549)
+use_collision = true
+size = Vector3(81.34968, 12.586029, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D168" type="CSGBox3D" parent="Node3D" unique_id=1658639493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -190.94624, 11.288418, -104.81222)
+use_collision = true
+size = Vector3(80.563156, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D186" type="CSGBox3D" parent="Node3D" unique_id=1200785517]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -190.71548, 22.535755, -152.77542)
+use_collision = true
+size = Vector3(0.001, 81.918304, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D187" type="CSGBox3D" parent="Node3D" unique_id=465429584]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -190.85735, 16.374449, -144.32822)
+use_collision = true
+size = Vector3(81.34968, 12.980515, 5.7434797)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D188" type="CSGBox3D" parent="Node3D" unique_id=434577766]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -190.85735, 16.177206, -159.31049)
+use_collision = true
+size = Vector3(81.34968, 12.586029, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D189" type="CSGBox3D" parent="Node3D" unique_id=1201493491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -190.94624, 11.288418, -152.06723)
+use_collision = true
+size = Vector3(80.563156, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D209" type="CSGBox3D" parent="Node3D" unique_id=1612061491]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -457.15692, 22.535755, -292.48312)
+use_collision = true
+size = Vector3(0.001, 81.918304, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D210" type="CSGBox3D" parent="Node3D" unique_id=628545183]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -472.06226, 16.374449, -286.18863)
+use_collision = true
+size = Vector3(51.82279, 12.980515, 1.4380672)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D213" type="CSGBox3D" parent="Node3D" unique_id=343433486]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -429.55176, 16.374449, -286.18863)
+use_collision = true
+size = Vector3(25.855532, 12.980515, 1.4380672)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D214" type="CSGBox3D" parent="Node3D" unique_id=970499362]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -431.8918, 19.0508, -286.18863)
+use_collision = true
+size = Vector3(30.535675, 7.6278133, 1.4380672)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D211" type="CSGBox3D" parent="Node3D" unique_id=2029188112]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -457.2988, 16.177206, -299.0182)
+use_collision = true
+size = Vector3(81.34968, 12.586029, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D212" type="CSGBox3D" parent="Node3D" unique_id=621581013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -457.38766, 11.288418, -291.77493)
+use_collision = true
+size = Vector3(80.563156, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D234" type="CSGBox3D" parent="Node3D" unique_id=1637969128]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -545.81055, 22.535755, -292.7524)
+use_collision = true
+size = Vector3(0.001, 97.938644, 35.370613)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D235" type="CSGBox3D" parent="Node3D" unique_id=1596586663]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -537.78064, 16.374449, -281.21378)
+use_collision = true
+size = Vector3(81.02638, 12.980515, 11.387775)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D236" type="CSGBox3D" parent="Node3D" unique_id=2028440913]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -537.94226, 16.177206, -303.1184)
+use_collision = true
+size = Vector3(81.34968, 12.586029, 11.5270815)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D239" type="CSGBox3D" parent="Node3D" unique_id=2027270057]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -544.99524, 16.177206, -309.32718)
+use_collision = true
+size = Vector3(95.4556, 12.586029, 1.0453444)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D241" type="CSGBox3D" parent="Node3D" unique_id=64949576]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -592.91034, 16.177206, -304.41235)
+use_collision = true
+size = Vector3(0.37857246, 12.586029, 10.874984)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D242" type="CSGBox3D" parent="Node3D" unique_id=610210583]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -592.91034, 16.177206, -280.75732)
+use_collision = true
+size = Vector3(0.37857246, 12.586029, 9.792692)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D240" type="CSGBox3D" parent="Node3D" unique_id=1180377145]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -544.99524, 16.177206, -275.77975)
+use_collision = true
+size = Vector3(95.4556, 12.586029, 1.0453444)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D237" type="CSGBox3D" parent="Node3D" unique_id=1131862732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -538.1229, 11.288, -291.775)
+use_collision = true
+size = Vector3(80.88705, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D238" type="CSGBox3D" parent="Node3D" unique_id=808102714]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -585.8148, 11.288, -292.38034)
+use_collision = true
+size = Vector3(14.498811, 1, 33.174004)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D195" type="CSGBox3D" parent="Node3D" unique_id=1499344400]
+transform = Transform3D(-2.4717616e-08, -0.56547314, -0.8247667, 1, -4.371139e-08, 0, -3.60517e-08, -0.8247667, 0.56547314, -323.3199, 22.535755, -46.27302)
+use_collision = true
+size = Vector3(0.001, 81.918304, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D196" type="CSGBox3D" parent="Node3D" unique_id=1905765314]
+transform = Transform3D(0.5654731, 0, -0.8247667, 0, 0.9999999, 0, 0.8247666, 0, 0.56547314, -330.36707, 16.374449, -41.613346)
+use_collision = true
+size = Vector3(81.34968, 12.980515, 5.7434797)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D197" type="CSGBox3D" parent="Node3D" unique_id=1453338599]
+transform = Transform3D(0.565473, 0, -0.82476664, 0, 0.9999999, 0, 0.82476664, 0, 0.56547314, -332.01477, 16.177206, -70.51169)
+use_collision = true
+size = Vector3(31.817417, 12.586029, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D199" type="CSGBox3D" parent="Node3D" unique_id=81601887]
+transform = Transform3D(0.565473, 0, -0.82476664, 0, 0.9999999, 0, 0.82476664, 0, 0.56547314, -306.10016, 16.166006, -32.66487)
+use_collision = true
+size = Vector3(38.63324, 12.586029, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D247" type="CSGBox3D" parent="Node3D" unique_id=1427879898]
+transform = Transform3D(0.565473, 0, -0.82476664, 0, 0.9999999, 0, 0.82476664, 0, 0.56547314, -300.282, 19.885805, -13.243679)
+use_collision = true
+size = Vector3(0.86919403, 5.146434, 15.109601)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D248" type="CSGBox3D" parent="Node3D" unique_id=621338342]
+transform = Transform3D(0.565473, 0, -0.82476664, 0, 0.9999999, 0, 0.82476664, 0, 0.56547314, -345.44366, 19.885805, -80.362976)
+use_collision = true
+size = Vector3(0.86919403, 5.146434, 15.109601)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D198" type="CSGBox3D" parent="Node3D" unique_id=899587853]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -324.0345, 11.288418, -46.062893)
+use_collision = true
+size = Vector3(80.563156, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D190" type="CSGBox3D" parent="Node3D" unique_id=1675357232]
+transform = Transform3D(-4.2310613e-09, -0.096795395, 0.99530447, 1, -4.3711392e-08, 2.819463e-17, 4.3506137e-08, 0.99530447, 0.096795395, -369.1058, 22.535755, -254.92587)
+use_collision = true
+size = Vector3(0.001, 89.08269, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D191" type="CSGBox3D" parent="Node3D" unique_id=249946491]
+transform = Transform3D(0.096795365, 0, 0.99530447, 0, 0.9999999, 0, -0.99530435, 0, 0.096795365, -360.36526, 16.374449, -257.53244)
+use_collision = true
+size = Vector3(81.34968, 12.980515, 5.7434797)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D249" type="CSGBox3D" parent="Node3D" unique_id=2081424593]
+transform = Transform3D(0.096795365, 0, 0.99530447, 0, 0.9999999, 0, -0.99530435, 0, 0.096795365, -364.3576, 20.188425, -281.96008)
+use_collision = true
+size = Vector3(25.728012, 5.352562, 18.419592)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D250" type="CSGBox3D" parent="Node3D" unique_id=1782871170]
+transform = Transform3D(0.9999194, 0, -0.012693666, 0, 0.9999999, 0, 0.012693673, 0, 0.99991953, -404.798, 20.188425, -290.1654)
+use_collision = true
+size = Vector3(25.728012, 5.352562, 18.419592)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D192" type="CSGBox3D" parent="Node3D" unique_id=881888968]
+transform = Transform3D(0.09679533, 0, 0.99530435, 0, 1, 0, -0.99530435, 0, 0.09679539, -375.2772, 18.81366, -258.98264)
+use_collision = true
+size = Vector3(81.34968, 7.313122, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D200" type="CSGBox3D" parent="Node3D" unique_id=1269361346]
+transform = Transform3D(0.09679533, 0, 0.99530435, 0, 1, 0, -0.99530435, 0, 0.09679539, -374.67422, 13.427019, -265.18265)
+use_collision = true
+size = Vector3(68.89113, 4.0450773, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D201" type="CSGBox3D" parent="Node3D" unique_id=335332311]
+transform = Transform3D(0.09679533, 0, 0.99530435, 0, 1, 0, -0.99530435, 0, 0.09679539, -378.7738, 13.427019, -223.02779)
+use_collision = true
+size = Vector3(8.537599, 4.0450773, 3.3266234)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D202" type="CSGBox3D" parent="Node3D" unique_id=41804684]
+transform = Transform3D(0.09679533, 0, 0.99530435, 0, 1, 0, -0.99530435, 0, 0.09679539, -384.13477, 11.624246, -229.55473)
+use_collision = true
+size = Vector3(3.8598938, 0.43953085, 15.579252)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D217" type="CSGBox3D" parent="Node3D" unique_id=1154033317]
+transform = Transform3D(0.09679533, 0, 0.99530435, 0, 1, 0, -0.99530435, 0, 0.09679539, -384.22397, 15.341884, -229.56342)
+use_collision = true
+size = Vector3(3.8598938, 0.43953085, 15.399978)
+material = SubResource("StandardMaterial3D_2wwcf")
+
+[node name="CSGBox3D222" type="CSGBox3D" parent="Node3D" unique_id=605707325]
+transform = Transform3D(0.4905147, 0, 0.8714328, 0, 1, 0, -0.87143284, 0, 0.49051476, -397.0928, 15.341884, -233.29527)
+use_collision = true
+size = Vector3(3.8598938, 0.43953085, 14.832661)
+material = SubResource("StandardMaterial3D_2wwcf")
+
+[node name="CSGBox3D230" type="CSGBox3D" parent="Node3D" unique_id=1318394643]
+transform = Transform3D(0.9198529, 0, 0.392263, 0, 1, 0, -0.39226303, 0, 0.9198529, -409.49667, 15.341884, -249.7144)
+use_collision = true
+size = Vector3(3.8598938, 0.43953085, 30.344398)
+material = SubResource("StandardMaterial3D_2wwcf")
+
+[node name="CSGBox3D231" type="CSGBox3D" parent="Node3D" unique_id=433822004]
+transform = Transform3D(0.51292825, 0, 0.8584313, 0, 1, 0, -0.85843134, 0, 0.51292825, -421.3638, 15.341884, -267.3721)
+use_collision = true
+size = Vector3(3.8598938, 0.43953085, 16.210194)
+material = SubResource("StandardMaterial3D_2wwcf")
+
+[node name="CSGBox3D232" type="CSGBox3D" parent="Node3D" unique_id=1723862914]
+transform = Transform3D(0.072801456, 0, 0.9973463, 0, 1, 0, -0.9973463, 0, 0.072801486, -435.2467, 15.341884, -272.16467)
+use_collision = true
+size = Vector3(3.8598938, 0.43953085, 15.859491)
+material = SubResource("StandardMaterial3D_2wwcf")
+
+[node name="CSGBox3D215" type="CSGBox3D" parent="Node3D" unique_id=1327239896]
+transform = Transform3D(-0.004682152, 0.079412304, 0.99683094, -0.9999594, -0.008073905, -0.0040535554, 0.0077264085, -0.9968093, 0.07944685, -384.32285, 13.424822, -227.57706)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.188064)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D218" type="CSGBox3D" parent="Node3D" unique_id=415911290]
+transform = Transform3D(-0.007595783, 0.5084285, 0.8610708, -0.9999594, -0.008073904, -0.004053556, 0.0048912168, -0.86106646, 0.508469, -398.7566, 13.424999, -232.20868)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 16.19698)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D220" type="CSGBox3D" parent="Node3D" unique_id=539855278]
+transform = Transform3D(-0.009022918, 0.9151059, 0.40311277, -0.99995947, -0.008073903, -0.0040535554, -0.00045481598, -0.4031328, 0.91514134, -411.5622, 13.450745, -249.4661)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 28.899832)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D221" type="CSGBox3D" parent="Node3D" unique_id=1248524190]
+transform = Transform3D(-0.009022918, 0.9151059, 0.40311277, -0.99995947, -0.008073903, -0.0040535554, -0.00045481598, -0.4031328, 0.91514134, -405.44083, 13.425737, -245.51192)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.832865)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D223" type="CSGBox3D" parent="Node3D" unique_id=1064064906]
+transform = Transform3D(-0.009022918, 0.9151059, 0.40311277, -0.99995947, -0.008073903, -0.0040535554, -0.00045481598, -0.4031328, 0.91514134, -411.83, 13.425, -260.023)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 16.19698)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D224" type="CSGBox3D" parent="Node3D" unique_id=259906971]
+transform = Transform3D(-0.0077201664, 0.5306047, 0.84758425, -0.9999597, -0.0080739055, -0.0040535573, 0.0046924334, -0.84758085, 0.5306453, -420.57672, 13.425, -269.393)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 16.19698)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D226" type="CSGBox3D" parent="Node3D" unique_id=1821500010]
+transform = Transform3D(-0.0046079736, 0.06986664, 0.9975456, -0.9999598, -0.008073906, -0.0040535578, 0.007770872, -0.9975236, 0.06990087, -435.0855, 13.427042, -274.10254)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.7097225)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D228" type="CSGBox3D" parent="Node3D" unique_id=1052138504]
+transform = Transform3D(-0.007932573, 0.99939877, -0.033746965, -0.99996006, -0.008073906, -0.004053559, -0.0043236725, 0.03371355, 0.999422, -442.49786, 13.431334, -280.61426)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 12.317919)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D229" type="CSGBox3D" parent="Node3D" unique_id=429402137]
+transform = Transform3D(-0.007932573, 0.99939877, -0.033746965, -0.99996006, -0.008073906, -0.004053559, -0.0043236725, 0.03371355, 0.999422, -446.48914, 13.434696, -278.95673)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.86101)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D227" type="CSGBox3D" parent="Node3D" unique_id=209601282]
+transform = Transform3D(-0.0044998536, 0.056037672, 0.9984184, -0.9999598, -0.008073906, -0.0040535587, 0.007833977, -0.9983959, 0.056071587, -438.05716, 13.425107, -270.3494)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 18.462774)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D225" type="CSGBox3D" parent="Node3D" unique_id=2081622313]
+transform = Transform3D(-0.0077201664, 0.5306047, 0.84758425, -0.9999597, -0.0080739055, -0.0040535573, 0.0046924334, -0.84758085, 0.5306453, -423.1213, 13.420262, -266.2181)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 13.737966)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D219" type="CSGBox3D" parent="Node3D" unique_id=2102350206]
+transform = Transform3D(-0.007595783, 0.5084285, 0.8610708, -0.9999594, -0.008073904, -0.004053556, 0.0048912168, -0.86106646, 0.508469, -397.06744, 13.4170475, -235.25854)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 12.27361)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D216" type="CSGBox3D" parent="Node3D" unique_id=437426575]
+transform = Transform3D(-0.004682152, 0.079412304, 0.99683094, -0.9999594, -0.008073905, -0.0040535554, 0.0077264085, -0.9968093, 0.07944685, -384.1251, 13.424018, -231.564)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.584848)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D203" type="CSGBox3D" parent="Node3D" unique_id=2083680128]
+transform = Transform3D(0.4822659, 0, 0.8760249, 0, 1, 0, -0.8760249, 0, 0.48226595, -397.90314, 11.624246, -233.8496)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.571402)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D204" type="CSGBox3D" parent="Node3D" unique_id=13138622]
+transform = Transform3D(0.9142097, 0, 0.40524128, 0, 1, 0, -0.4052413, 0, 0.91420984, -406.70306, 11.624246, -243.29848)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.571402)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D205" type="CSGBox3D" parent="Node3D" unique_id=484189523]
+transform = Transform3D(0.9142097, 0, 0.40524128, 0, 1, 0, -0.4052413, 0, 0.91420984, -413.00745, 11.624246, -257.49945)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.571402)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D206" type="CSGBox3D" parent="Node3D" unique_id=978139072]
+transform = Transform3D(0.5279222, 0, 0.84929276, 0, 1, 0, -0.8492927, 0, 0.5279223, -422.07858, 11.624246, -267.84775)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.571402)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D207" type="CSGBox3D" parent="Node3D" unique_id=1768730550]
+transform = Transform3D(0.06649795, 0, 0.99778664, 0, 1, 0, -0.9977865, 0, 0.06649798, -435.48767, 11.624246, -272.13107)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 15.571402)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D208" type="CSGBox3D" parent="Node3D" unique_id=198159951]
+transform = Transform3D(0.9991757, 0, -0.0405935, 0, 1, 0, 0.040593483, 0, 0.99917585, -444.61435, 11.624246, -278.8077)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 16.080624)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D233" type="CSGBox3D" parent="Node3D" unique_id=301292731]
+transform = Transform3D(0.9991757, 0, -0.0405935, 0, 1, 0, 0.040593483, 0, 0.99917585, -444.61435, 15.3534975, -278.8077)
+use_collision = true
+size = Vector3(3.7207642, 0.43953085, 16.080624)
+material = SubResource("StandardMaterial3D_ooc2g")
+
+[node name="CSGBox3D193" type="CSGBox3D" parent="Node3D" unique_id=790750825]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -368.4384, 11.288418, -254.47221)
+use_collision = true
+size = Vector3(88.03988, 1, 10.967443)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D174" type="CSGBox3D" parent="Node3D" unique_id=1002715382]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -244.42502, 22.535753, -104.5724)
+use_collision = true
+size = Vector3(0.001, 29.529137, 19.001724)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D175" type="CSGBox3D" parent="Node3D" unique_id=1022985255]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -241.84312, 16.374449, -93.05424)
+use_collision = true
+size = Vector3(20.70063, 12.980515, 5.440817)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D176" type="CSGBox3D" parent="Node3D" unique_id=1970267781]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -241.41588, 16.177206, -112.62651)
+use_collision = true
+size = Vector3(21.55521, 12.586029, 0.92668414)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D177" type="CSGBox3D" parent="Node3D" unique_id=518132994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -242.04207, 11.288418, -104.084625)
+use_collision = true
+size = Vector3(21.668652, 1, 17.852863)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D169" type="CSGBox3D" parent="Node3D" unique_id=1548955410]
+transform = Transform3D(-3.9160593e-08, -0.89588994, -0.444276, 1, -4.371139e-08, 0, -1.9419922e-08, -0.444276, 0.89588994, -293.05832, 22.535755, -127.216774)
+use_collision = true
+size = Vector3(0.001, 87.58122, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D170" type="CSGBox3D" parent="Node3D" unique_id=1449948150]
+transform = Transform3D(0.8958898, 0, -0.444276, 0, 0.9999999, 0, 0.44427595, 0, 0.89588994, -293.141, 16.374449, -120.41535)
+use_collision = true
+size = Vector3(81.86575, 12.980515, 1.1091728)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D185" type="CSGBox3D" parent="Node3D" unique_id=1522300482]
+transform = Transform3D(0.73789257, 0, -0.67491806, 0, 0.9999999, 0, 0.67491794, 0, 0.7378927, -328.0875, 16.374449, -136.97017)
+use_collision = true
+size = Vector3(17.313118, 12.980515, 1.1091728)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D194" type="CSGBox3D" parent="Node3D" unique_id=802098805]
+transform = Transform3D(0.33346638, 0, -0.94276196, 0, 0.9999999, 0, 0.9427618, 0, 0.33346647, -377.25516, 14.052329, -213.1893)
+use_collision = true
+size = Vector3(17.313118, 24.536083, 1.1091728)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D171" type="CSGBox3D" parent="Node3D" unique_id=327629256]
+transform = Transform3D(0.8958898, 0, -0.44427598, 0, 0.9999999, 0, 0.44427598, 0, 0.89588994, -288.27847, 16.177206, -130.80151)
+use_collision = true
+size = Vector3(81.34968, 12.586029, 0.92668414)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D172" type="CSGBox3D" parent="Node3D" unique_id=205622734]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -289.0156, 11.289, -124.23461)
+use_collision = true
+size = Vector3(87.22921, 1, 11.30318)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D181" type="CSGBox3D" parent="Node3D" unique_id=44348386]
+transform = Transform3D(-2.2854243e-08, -0.5228441, -0.85242844, 1, -4.371139e-08, -1.5431045e-15, -3.726083e-08, -0.85242844, 0.5228441, -350.32538, 22.535755, -180.46867)
+use_collision = true
+size = Vector3(0.001, 81.918304, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D182" type="CSGBox3D" parent="Node3D" unique_id=2071000752]
+transform = Transform3D(0.5228439, 0, -0.8524284, 0, 0.9999999, 0, 0.85242826, 0, 0.522844, -355.49005, 16.374449, -177.16457)
+use_collision = true
+size = Vector3(81.86575, 12.980515, 1.1091728)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D183" type="CSGBox3D" parent="Node3D" unique_id=1582914659]
+transform = Transform3D(0.5228439, 0, -0.8524284, 0, 0.9999999, 0, 0.85242826, 0, 0.522844, -345.85175, 16.177206, -183.37903)
+use_collision = true
+size = Vector3(81.34968, 12.586029, 0.92668414)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D184" type="CSGBox3D" parent="Node3D" unique_id=1217754800]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -349.966, 11.287, -178.208)
+use_collision = true
+size = Vector3(87.22921, 1, 11.30318)
+material = SubResource("StandardMaterial3D_sb2pt")
+
+[node name="CSGBox3D173" type="CSGBox3D" parent="Node3D" unique_id=1003216287]
+transform = Transform3D(-3.6398447e-08, -0.8326993, 0.5537255, 1, -4.371139e-08, 0, 2.4204109e-08, 0.5537255, 0.8326993, -287.61395, 22.535755, -75.063324)
+use_collision = true
+size = Vector3(0.001, 81.918304, 12.557159)
+material = SubResource("StandardMaterial3D_6qsgm")
+
+[node name="CSGBox3D178" type="CSGBox3D" parent="Node3D" unique_id=1319049315]
+transform = Transform3D(0.8326992, 0, 0.5537255, 0, 0.9999999, 0, -0.5537255, 0, 0.8326993, -284.32895, 16.374449, -69.8861)
+use_collision = true
+size = Vector3(81.32864, 12.980515, 1.1091728)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D179" type="CSGBox3D" parent="Node3D" unique_id=785078389]
+transform = Transform3D(0.8326992, 0, 0.5537255, 0, 0.9999999, 0, -0.5537254, 0, 0.83269924, -290.5043, 16.177206, -79.54829)
+use_collision = true
+size = Vector3(81.78665, 12.586029, 0.92668414)
+material = SubResource("StandardMaterial3D_e0an3")
+
+[node name="CSGBox3D180" type="CSGBox3D" parent="Node3D" unique_id=970191369]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -286.61316, 11.3, -74.878685)
+use_collision = true
+size = Vector3(84.46102, 1, 10.967443)
 material = SubResource("StandardMaterial3D_sb2pt")
 
 [node name="CSGBox3D16" type="CSGBox3D" parent="Node3D" unique_id=642466283]
@@ -655,9 +1208,9 @@ size = Vector3(3.941835, 8.091309, 0.55443287)
 material = SubResource("StandardMaterial3D_bdbiy")
 
 [node name="CSGBox3D25" type="CSGBox3D" parent="Node3D" unique_id=1756466]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.49897, 18.864632, -87.45075)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.49897, 18.64608, -87.45075)
 use_collision = true
-size = Vector3(26.366203, 3.0681763, 0.55443287)
+size = Vector3(26.366203, 3.5052795, 0.55443287)
 material = SubResource("StandardMaterial3D_iw27f")
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="Node3D" unique_id=1876856401]
@@ -673,9 +1226,9 @@ size = Vector3(5.723439, 8.091309, 27.567139)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D28" type="CSGBox3D" parent="Node3D" unique_id=995691046]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.752033, 25.169085, -92.61219)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.752033, 21.876808, -92.61219)
 use_collision = true
-size = Vector3(42.6645, 11.775555, 27.567139)
+size = Vector3(42.6645, 5.191, 27.567139)
 material = SubResource("StandardMaterial3D_fqhs2")
 
 [node name="CSGBox3D19" type="CSGBox3D" parent="Node3D" unique_id=740293607]
@@ -753,9 +1306,9 @@ size = Vector3(12.461826, 2.3207564, 0.58795166)
 material = SubResource("StandardMaterial3D_2xilk")
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="Node3D" unique_id=1923399454]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -155.46596, 20.05863, -7.967722)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -155.46596, 20.460485, -7.967722)
 use_collision = true
-size = Vector3(21.725403, 5.600586, 10.452972)
+size = Vector3(21.725403, 4.796875, 10.452972)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Node3D" unique_id=1802534825]
@@ -795,9 +1348,9 @@ size = Vector3(12.461826, 2.3207564, 0.58795166)
 material = SubResource("StandardMaterial3D_2xilk")
 
 [node name="CSGBox3D97" type="CSGBox3D" parent="Node3D" unique_id=497312261]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.06882, 20.05863, -7.967722)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.06882, 20.455847, -7.967722)
 use_collision = true
-size = Vector3(21.725403, 5.600586, 10.452972)
+size = Vector3(21.725403, 4.8061523, 10.452972)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D100" type="CSGBox3D" parent="Node3D" unique_id=2103358363]
@@ -915,9 +1468,9 @@ size = Vector3(12.461826, 7.1817408, 0.58795166)
 material = SubResource("StandardMaterial3D_2xilk")
 
 [node name="CSGBox3D113" type="CSGBox3D" parent="Node3D" unique_id=1634120983]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -155.52356, 20.05863, 13.914537)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -155.52356, 20.479284, 13.914537)
 use_collision = true
-size = Vector3(21.725403, 5.600586, 10.452972)
+size = Vector3(21.725403, 4.7592773, 10.452972)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D114" type="CSGBox3D" parent="Node3D" unique_id=1836275903]
@@ -957,9 +1510,9 @@ size = Vector3(12.461826, 2.3207564, 0.58795166)
 material = SubResource("StandardMaterial3D_2xilk")
 
 [node name="CSGBox3D120" type="CSGBox3D" parent="Node3D" unique_id=1710449219]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -217.44308, 20.05863, -7.967722)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -217.44308, 20.482702, -7.967722)
 use_collision = true
-size = Vector3(21.725403, 5.600586, 10.452972)
+size = Vector3(21.725403, 4.7524414, 10.452972)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D121" type="CSGBox3D" parent="Node3D" unique_id=1944248313]
@@ -999,9 +1552,9 @@ size = Vector3(12.461826, 2.3207564, 0.58795166)
 material = SubResource("StandardMaterial3D_2xilk")
 
 [node name="CSGBox3D127" type="CSGBox3D" parent="Node3D" unique_id=1007972863]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.04596, 20.05863, -7.967722)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.04596, 20.50614, -7.967722)
 use_collision = true
-size = Vector3(21.725403, 5.600586, 10.452972)
+size = Vector3(21.725403, 4.7055664, 10.452972)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D128" type="CSGBox3D" parent="Node3D" unique_id=231402071]
@@ -1041,9 +1594,9 @@ size = Vector3(12.461826, 2.3207564, 0.58795166)
 material = SubResource("StandardMaterial3D_2xilk")
 
 [node name="CSGBox3D134" type="CSGBox3D" parent="Node3D" unique_id=417615189]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -185.80997, 20.05863, 13.914537)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -185.80997, 20.490759, 13.914537)
 use_collision = true
-size = Vector3(21.725403, 5.600586, 10.452972)
+size = Vector3(21.725403, 4.736328, 10.452972)
 material = SubResource("StandardMaterial3D_e0an3")
 
 [node name="CSGBox3D135" type="CSGBox3D" parent="Node3D" unique_id=927154794]
@@ -1339,8 +1892,8 @@ shape = SubResource("BoxShape3D_2xilk")
 debug_color = Color(0.8235294, 0.03529412, 0.77254903, 0.41960785)
 
 [node name="cái đệm cầu thang 2" type="CollisionShape3D" parent="." unique_id=1379655994]
-transform = Transform3D(1, 0, 0, 0, 0.8883763, -0.4591163, 0, 0.4591163, 0.8883763, 53.51474, 4.8048944, -63.72089)
-shape = SubResource("BoxShape3D_2xilk")
+transform = Transform3D(1, 0, 0, 0, 0.8971217, -0.44178355, 0, 0.44178355, 0.8971217, 53.51474, 5.886175, -67.131714)
+shape = SubResource("BoxShape3D_e0an3")
 debug_color = Color(0.8235294, 0.03529412, 0.77254903, 0.41960785)
 
 [node name="ánh sáng" type="Node3D" parent="." unique_id=1479574083]
@@ -1676,6 +2229,1048 @@ transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -
 mesh = SubResource("BoxMesh_xte17")
 surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
 
+[node name="đèn vuông8" type="CSGBox3D" parent="ánh sáng" unique_id=2140543771]
+transform = Transform3D(0.86600685, 0.5000321, 0, -0.5000321, 0.86600685, 0, 0, 0, 1, -44.99053, 14.532528, -50.911774)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông8" unique_id=72444955]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông8" unique_id=477402298]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông8" unique_id=230446219]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông9" type="CSGBox3D" parent="ánh sáng" unique_id=1258235511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.381725, 22.53253, -50.911774)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông9" unique_id=282107518]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông9" unique_id=680680437]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông9" unique_id=416975208]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông11" type="CSGBox3D" parent="ánh sáng" unique_id=1169418158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.381725, 22.53253, 3.0831184)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông11" unique_id=2108834863]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông11" unique_id=1007955692]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông11" unique_id=538652702]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông12" type="CSGBox3D" parent="ánh sáng" unique_id=1391436138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -103.85705, 22.53253, 3.0831184)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông12" unique_id=14811965]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+shadow_enabled = true
+shadow_bias = 4.16
+spot_range = 21.777561
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông12" unique_id=999019812]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông12" unique_id=1810833800]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông13" type="CSGBox3D" parent="ánh sáng" unique_id=1231389427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.15955, 22.53253, 3.0831184)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông13" unique_id=1440496252]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông13" unique_id=741138644]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông13" unique_id=1982875246]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông14" type="CSGBox3D" parent="ánh sáng" unique_id=2127301292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -172.33578, 22.53253, 3.0831184)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông14" unique_id=556425610]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông14" unique_id=1150927454]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông14" unique_id=185006346]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông15" type="CSGBox3D" parent="ánh sáng" unique_id=722654515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -202.02454, 22.53253, 3.0831184)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông15" unique_id=877958684]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông15" unique_id=748666586]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông15" unique_id=741695657]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông16" type="CSGBox3D" parent="ánh sáng" unique_id=356367417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -234.25616, 22.53253, 3.0831184)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông16" unique_id=966124666]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông16" unique_id=992764476]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông16" unique_id=1464631459]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông17" type="CSGBox3D" parent="ánh sáng" unique_id=597549840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.10022, 22.53253, 24.306923)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông17" unique_id=1844085569]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông17" unique_id=633845356]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông17" unique_id=622870279]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông18" type="CSGBox3D" parent="ánh sáng" unique_id=1189033784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -185.08853, 22.53253, 24.306923)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông18" unique_id=1521294792]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông18" unique_id=752504758]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông18" unique_id=1182929011]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông19" type="CSGBox3D" parent="ánh sáng" unique_id=640052738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.41827, 22.53253, 24.306923)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông19" unique_id=132986245]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông19" unique_id=486665085]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông19" unique_id=1287848710]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông20" type="CSGBox3D" parent="ánh sáng" unique_id=58089189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.37589, 22.53253, 24.306923)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông20" unique_id=616626980]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông20" unique_id=1141177849]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông20" unique_id=1422689347]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông21" type="CSGBox3D" parent="ánh sáng" unique_id=888174462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -216.10022, 22.53253, -17.84872)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông21" unique_id=1097327789]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông21" unique_id=1129914503]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông21" unique_id=400600590]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông22" type="CSGBox3D" parent="ánh sáng" unique_id=1378544149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -185.08853, 22.53253, -17.84872)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông22" unique_id=1062304513]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông22" unique_id=1447986347]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông22" unique_id=528427470]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông23" type="CSGBox3D" parent="ánh sáng" unique_id=1302477847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.41827, 22.53253, -17.84872)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông23" unique_id=1286694209]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 45.708843
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông23" unique_id=1471757105]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông23" unique_id=1686130424]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông24" type="CSGBox3D" parent="ánh sáng" unique_id=598753943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.37589, 22.53253, -17.84872)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông24" unique_id=175235335]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+shadow_enabled = true
+shadow_bias = 5.371
+shadow_normal_bias = 1.69
+shadow_reverse_cull_face = true
+shadow_blur = 0.0
+distance_fade_enabled = true
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông24" unique_id=17351891]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông24" unique_id=1489839790]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông10" type="CSGBox3D" parent="ánh sáng" unique_id=710943658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.749893, 22.53253, -104.20264)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông10" unique_id=1323199170]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.37314034, -0.03668213)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông10" unique_id=1772295969]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông10" unique_id=1831438009]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông25" type="CSGBox3D" parent="ánh sáng" unique_id=822471171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -115.0219, 22.53253, -104.20264)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông25" unique_id=1300761654]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông25" unique_id=998762402]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông25" unique_id=23909391]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông26" type="CSGBox3D" parent="ánh sáng" unique_id=2091308503]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -144.59024, 22.53253, -104.20264)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông26" unique_id=1332457690]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông26" unique_id=1348882997]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông26" unique_id=979553745]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông27" type="CSGBox3D" parent="ánh sáng" unique_id=472036785]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -195.6497, 22.53253, -104.20264)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông27" unique_id=1196461092]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông27" unique_id=1450920696]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông27" unique_id=33738138]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông29" type="CSGBox3D" parent="ánh sáng" unique_id=849914545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -167.63875, 22.53253, -104.20264)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông29" unique_id=2085124569]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông29" unique_id=421300047]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông29" unique_id=575888317]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông28" type="CSGBox3D" parent="ánh sáng" unique_id=1210487870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -225.21805, 22.53253, -104.20264)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông28" unique_id=111995177]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông28" unique_id=910999388]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông28" unique_id=1994887990]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông40" type="CSGBox3D" parent="ánh sáng" unique_id=999069187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -195.6497, 22.53253, -151.45764)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông40" unique_id=1532677974]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông40" unique_id=1894174234]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông40" unique_id=78232913]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông41" type="CSGBox3D" parent="ánh sáng" unique_id=216699075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -167.63875, 22.53253, -151.45764)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông41" unique_id=2115962915]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông41" unique_id=519273491]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông41" unique_id=1264489667]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông42" type="CSGBox3D" parent="ánh sáng" unique_id=2076883971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -225.21805, 22.53253, -151.45764)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông42" unique_id=1010650729]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông42" unique_id=1620139178]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông42" unique_id=1066329105]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông49" type="CSGBox3D" parent="ánh sáng" unique_id=1160541775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -462.09116, 22.53253, -291.16534)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông49" unique_id=1899101499]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông49" unique_id=2141278208]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông49" unique_id=1358549395]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông50" type="CSGBox3D" parent="ánh sáng" unique_id=731888049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -434.08017, 22.53253, -291.16534)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông50" unique_id=650616073]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông50" unique_id=494921586]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông50" unique_id=879536334]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông51" type="CSGBox3D" parent="ánh sáng" unique_id=1795792179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -491.6595, 22.53253, -291.16534)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông51" unique_id=1180448967]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông51" unique_id=1166763218]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông51" unique_id=785325014]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông52" type="CSGBox3D" parent="ánh sáng" unique_id=853115304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -542.7346, 22.53253, -291.16534)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông52" unique_id=1036550331]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông52" unique_id=768878796]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông52" unique_id=1831500898]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông53" type="CSGBox3D" parent="ánh sáng" unique_id=463933573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -514.72363, 22.53253, -291.16534)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông53" unique_id=591102389]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông53" unique_id=1512366786]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông53" unique_id=317453539]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông54" type="CSGBox3D" parent="ánh sáng" unique_id=2115348258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -572.3029, 22.53253, -291.16534)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông54" unique_id=1841427178]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông54" unique_id=2103245968]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông54" unique_id=1989536185]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông46" type="CSGBox3D" parent="ánh sáng" unique_id=1854791397]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -327.1969, 22.53253, -49.59742)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông46" unique_id=1707373908]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông46" unique_id=1125208426]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông46" unique_id=574245933]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông47" type="CSGBox3D" parent="ánh sáng" unique_id=701215418]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -311.35748, 22.53253, -26.494944)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông47" unique_id=703663151]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông47" unique_id=2070054632]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông47" unique_id=27217414]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông48" type="CSGBox3D" parent="ánh sáng" unique_id=673626418]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -343.91702, 22.53253, -73.98442)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông48" unique_id=1535052651]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông48" unique_id=1530287083]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông48" unique_id=832666287]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông43" type="CSGBox3D" parent="ánh sáng" unique_id=1161508863]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -367.92508, 22.53253, -253.45262)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông43" unique_id=690086354]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông43" unique_id=369844643]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông43" unique_id=470923850]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông44" type="CSGBox3D" parent="ánh sáng" unique_id=801417313]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -365.21375, 22.53253, -281.33206)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông44" unique_id=878481789]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông44" unique_id=35507191]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông44" unique_id=1058154334]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông45" type="CSGBox3D" parent="ánh sáng" unique_id=1895272764]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -370.78717, 22.53253, -224.02315)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông45" unique_id=1798826654]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông45" unique_id=2019046743]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông45" unique_id=817778840]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông35" type="CSGBox3D" parent="ánh sáng" unique_id=887235887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -243.62999, 22.53253, -103.864716)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông35" unique_id=1796284752]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông35" unique_id=1204938072]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông35" unique_id=1040747411]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông30" type="CSGBox3D" parent="ánh sáng" unique_id=695632587]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -295.52762, 22.53253, -126.97039)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông30" unique_id=453799342]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông30" unique_id=1791083921]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông30" unique_id=1056757642]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông31" type="CSGBox3D" parent="ánh sáng" unique_id=554740610]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -270.43286, 22.53253, -114.52578)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông31" unique_id=1963745532]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông31" unique_id=2106900966]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông31" unique_id=1225851320]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông32" type="CSGBox3D" parent="ánh sáng" unique_id=1261961362]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -322.0176, 22.53253, -140.10687)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông32" unique_id=69104053]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông32" unique_id=1161597017]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông32" unique_id=1470917406]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông37" type="CSGBox3D" parent="ánh sáng" unique_id=1648227994]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -354.0285, 22.53253, -183.98573)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông37" unique_id=1855202289]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông37" unique_id=1197853951]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông37" unique_id=1560745698]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông38" type="CSGBox3D" parent="ánh sáng" unique_id=746118599]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -339.38315, 22.53253, -160.10838)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông38" unique_id=988848702]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông38" unique_id=1419336817]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông38" unique_id=379741828]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông39" type="CSGBox3D" parent="ánh sáng" unique_id=1713178589]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -369.48816, 22.53253, -209.19061)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông39" unique_id=940246442]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông39" unique_id=731668004]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông39" unique_id=1193076355]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông33" type="CSGBox3D" parent="ánh sáng" unique_id=299040307]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -290.99298, 22.53253, -71.233795)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông33" unique_id=1919461087]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông33" unique_id=450764359]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông33" unique_id=933540697]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông34" type="CSGBox3D" parent="ánh sáng" unique_id=578063684]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -267.66824, 22.53253, -86.74419)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông34" unique_id=1947166062]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông34" unique_id=935209327]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông34" unique_id=24659136]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="đèn vuông36" type="CSGBox3D" parent="ánh sáng" unique_id=636795789]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -314.10193, 22.53253, -54.86104)
+size = Vector3(3.4539795, 0.46510315, 3.4290466)
+material = SubResource("StandardMaterial3D_8aj5u")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng/đèn vuông36" unique_id=151289573]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -0.24066162, -0.03668219)
+light_color = Color(0.7039176, 0, 0.08485191, 1)
+spot_range = 1379.66
+spot_attenuation = -0.43
+spot_angle = 71.31891
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ánh sáng/đèn vuông36" unique_id=1024997162]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ánh sáng/đèn vuông36" unique_id=1083037996]
+transform = Transform3D(1, 0, 0, 0, -0.0019459911, -0.99999815, 0, 0.99999815, -0.0019459911, -0.026733398, -0.017282486, -0.011366338)
+mesh = SubResource("BoxMesh_xte17")
+surface_material_override/0 = SubResource("StandardMaterial3D_315gg")
+
 [node name="đèn vuông3" type="CSGBox3D" parent="ánh sáng" unique_id=1215510609]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.138374, 10.277629, -103.34957)
 size = Vector3(3.4539795, 0.46510315, 3.4290466)
@@ -1685,18 +3280,6 @@ material = SubResource("StandardMaterial3D_8aj5u")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114.30259, 10.277629, -103.34957)
 size = Vector3(3.4539795, 0.46510315, 3.4290466)
 material = SubResource("StandardMaterial3D_8aj5u")
-
-[node name="SpotLight3D" type="SpotLight3D" parent="ánh sáng" unique_id=1467555423]
-transform = Transform3D(1, 0, 0, 0, 0.03010592, 0.99954677, 0, -0.99954677, 0.03010592, 0, 201.22925, -18.810776)
-light_color = Color(0.6528438, 0.31822228, 0.38399228, 1)
-spot_range = 245.99782
-
-[node name="OmniLight3D" type="OmniLight3D" parent="ánh sáng/SpotLight3D" unique_id=845646801]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -195.53102, -23.104448, 249.95024)
-light_color = Color(0, 0.5364158, 0.5267152, 1)
-light_energy = 16.0
-omni_range = 319.52762
-script = ExtResource("3_e0an3")
 
 [node name="cái viền" type="Node3D" parent="." unique_id=677803916]
 
@@ -1781,8 +3364,8 @@ size = Vector3(43.6476, 0.6254883, 0.45117188)
 material = SubResource("StandardMaterial3D_71pa8")
 
 [node name="CSGBox3D127" type="CSGBox3D" parent="cái viền" unique_id=490183638]
-transform = Transform3D(-5.9604645e-08, 0.62217396, 0.78287894, -3.5527137e-15, 0.782879, -0.622174, -0.99999994, -7.4505806e-08, -4.4703484e-08, -104.3294, 11.829961, 29.42096)
-size = Vector3(43.324265, 0.6254883, 0.45117188)
+transform = Transform3D(-5.9604645e-08, 0.62217396, 0.78287894, -3.5527137e-15, 0.782879, -0.622174, -0.99999994, -7.4505806e-08, -4.4703484e-08, -104.3294, 11.829961, 19.114307)
+size = Vector3(22.71096, 0.6254883, 0.45117188)
 material = SubResource("StandardMaterial3D_71pa8")
 
 [node name="CSGBox3D129" type="CSGBox3D" parent="cái viền" unique_id=1074047705]
@@ -2088,8 +3671,8 @@ size = Vector3(97.37749, 0.6254883, 0.45117188)
 material = SubResource("StandardMaterial3D_71pa8")
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="cái viền" unique_id=1030241902]
-transform = Transform3D(-4.371139e-08, -0.622174, -0.782879, 0, 0.782879, -0.622174, 1, -2.719609e-08, -3.422073e-08, 31.779003, 0.7013968, 29.45447)
-size = Vector3(49.438835, 0.6254883, 0.45117188)
+transform = Transform3D(-4.371139e-08, -0.622174, -0.782879, 0, 0.782879, -0.622174, 1, -2.719609e-08, -3.422073e-08, 31.779003, 0.7013968, 16.392368)
+size = Vector3(23.314632, 0.6254883, 0.45117188)
 material = SubResource("StandardMaterial3D_71pa8")
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="cái viền" unique_id=1214155849]
@@ -2820,6 +4403,616 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.58117, 17.22572, -99.9319
 size = Vector3(0.376, 10.992453, 0.376)
 material = SubResource("StandardMaterial3D_bgf7x")
 
+[node name="CSGBox3D170" type="CSGBox3D" parent="cái viền" unique_id=1508124618]
+transform = Transform3D(-0.99999994, -1.01701886e-07, -7.892422e-08, 9.710828e-15, 0.782879, -0.622174, 1.03316026e-07, -0.62217396, -0.78287894, -190.84074, 11.829961, -110.50473)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D171" type="CSGBox3D" parent="cái viền" unique_id=56008825]
+transform = Transform3D(0.99999994, 4.730972e-08, 1.0482758e-08, -1.7763568e-15, 0.782879, -0.622174, -1.5893264e-08, 0.62217396, 0.78287894, -190.82628, 11.829961, -99.79827)
+size = Vector3(81.28397, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột113" type="CSGBox3D" parent="cái viền" unique_id=2029962421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150.13521, 17.22572, -110.3633)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột153" type="CSGBox3D" parent="cái viền" unique_id=34325362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168.06477, 17.22572, -110.3633)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột154" type="CSGBox3D" parent="cái viền" unique_id=316186658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -187.28242, 17.22572, -110.3633)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột155" type="CSGBox3D" parent="cái viền" unique_id=365231318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -211.52058, 17.22572, -110.3633)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột156" type="CSGBox3D" parent="cái viền" unique_id=1669101416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -231.33075, 17.22572, -110.3633)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột157" type="CSGBox3D" parent="cái viền" unique_id=1561838087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -231.33075, 17.22572, -99.931946)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột158" type="CSGBox3D" parent="cái viền" unique_id=2109047271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.872, 17.22572, -99.931946)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột159" type="CSGBox3D" parent="cái viền" unique_id=1847595391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.96935, 17.22572, -99.931946)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột160" type="CSGBox3D" parent="cái viền" unique_id=1848974647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -167.1234, 17.22572, -99.931946)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột197" type="CSGBox3D" parent="cái viền" unique_id=101381917]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150.70294, 17.22572, -157.6183)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột198" type="CSGBox3D" parent="cái viền" unique_id=876303360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150.70294, 17.22572, -147.18695)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D180" type="CSGBox3D" parent="cái viền" unique_id=1598175103]
+transform = Transform3D(-0.99999994, -1.01701886e-07, -7.892422e-08, 9.710828e-15, 0.782879, -0.622174, 1.03316026e-07, -0.62217396, -0.78287894, -190.84074, 11.829961, -157.75974)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D181" type="CSGBox3D" parent="cái viền" unique_id=1341489563]
+transform = Transform3D(0.99999994, 4.730972e-08, 1.0482758e-08, -1.7763568e-15, 0.782879, -0.622174, -1.5893264e-08, 0.62217396, 0.78287894, -190.82628, 11.829961, -147.05328)
+size = Vector3(81.28397, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột199" type="CSGBox3D" parent="cái viền" unique_id=1656571722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168.06477, 17.22572, -157.6183)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột200" type="CSGBox3D" parent="cái viền" unique_id=1426039380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -187.28242, 17.22572, -157.6183)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột201" type="CSGBox3D" parent="cái viền" unique_id=643240601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -211.52058, 17.22572, -157.6183)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột202" type="CSGBox3D" parent="cái viền" unique_id=1257214621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -231.33075, 17.22572, -157.6183)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột203" type="CSGBox3D" parent="cái viền" unique_id=1793494440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -231.33075, 17.22572, -147.18695)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột204" type="CSGBox3D" parent="cái viền" unique_id=1808000595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -204.872, 17.22572, -147.18695)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột205" type="CSGBox3D" parent="cái viền" unique_id=1949293799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.96935, 17.22572, -147.18695)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột206" type="CSGBox3D" parent="cái viền" unique_id=543132711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -167.1234, 17.22572, -147.18695)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột227" type="CSGBox3D" parent="cái viền" unique_id=1618044188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -417.14438, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột228" type="CSGBox3D" parent="cái viền" unique_id=3838262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -417.14438, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D188" type="CSGBox3D" parent="cái viền" unique_id=106279013]
+transform = Transform3D(-0.99999994, -1.01701886e-07, -7.892422e-08, 9.710828e-15, 0.782879, -0.622174, 1.03316026e-07, -0.62217396, -0.78287894, -457.2822, 11.829961, -297.46744)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D189" type="CSGBox3D" parent="cái viền" unique_id=1490059353]
+transform = Transform3D(0.99999994, 4.730972e-08, 1.0482758e-08, -1.7763568e-15, 0.782879, -0.622174, -1.5893264e-08, 0.62217396, 0.78287894, -429.55087, 11.829961, -286.761)
+size = Vector3(25.85023, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D190" type="CSGBox3D" parent="cái viền" unique_id=1843550944]
+transform = Transform3D(0.99999994, 4.730972e-08, 1.0482758e-08, -1.7763568e-15, 0.782879, -0.622174, -1.5893264e-08, 0.62217396, 0.78287894, -472.0309, 11.829961, -286.761)
+size = Vector3(51.757576, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột229" type="CSGBox3D" parent="cái viền" unique_id=344727934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -434.5062, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột230" type="CSGBox3D" parent="cái viền" unique_id=1382904724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -453.72385, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột231" type="CSGBox3D" parent="cái viền" unique_id=959431688]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -477.962, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột232" type="CSGBox3D" parent="cái viền" unique_id=607305515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -497.7722, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột233" type="CSGBox3D" parent="cái viền" unique_id=419757438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -497.7722, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột234" type="CSGBox3D" parent="cái viền" unique_id=393909247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -471.31345, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột235" type="CSGBox3D" parent="cái viền" unique_id=1162324602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -453.4108, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột236" type="CSGBox3D" parent="cái viền" unique_id=748714958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -433.56485, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột237" type="CSGBox3D" parent="cái viền" unique_id=352662361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -497.78784, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột238" type="CSGBox3D" parent="cái viền" unique_id=1320220769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -497.78784, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D191" type="CSGBox3D" parent="cái viền" unique_id=2102260833]
+transform = Transform3D(-0.99999994, -1.01701886e-07, -7.892422e-08, 9.710828e-15, 0.782879, -0.622174, 1.03316026e-07, -0.62217396, -0.78287894, -537.92566, 11.829961, -297.46744)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D192" type="CSGBox3D" parent="cái viền" unique_id=1877334976]
+transform = Transform3D(0.99999994, 4.730972e-08, 1.0482758e-08, -1.7763568e-15, 0.782879, -0.622174, -1.5893264e-08, 0.62217396, 0.78287894, -538.1321, 11.829961, -286.761)
+size = Vector3(80.84219, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột239" type="CSGBox3D" parent="cái viền" unique_id=2082872679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -515.14966, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột240" type="CSGBox3D" parent="cái viền" unique_id=66250710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -534.3673, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột241" type="CSGBox3D" parent="cái viền" unique_id=1309228029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -558.60547, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột242" type="CSGBox3D" parent="cái viền" unique_id=292553605]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -578.41565, 17.22572, -297.326)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột243" type="CSGBox3D" parent="cái viền" unique_id=559347598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -578.41565, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột247" type="CSGBox3D" parent="cái viền" unique_id=586630052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -578.41565, 17.22572, -276.42813)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột248" type="CSGBox3D" parent="cái viền" unique_id=1743796869]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -592.6564, 17.22572, -276.42813)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột249" type="CSGBox3D" parent="cái viền" unique_id=253478075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -592.6564, 17.22572, -308.78162)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột250" type="CSGBox3D" parent="cái viền" unique_id=611463284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -578.67035, 17.22572, -308.6961)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột244" type="CSGBox3D" parent="cái viền" unique_id=2137059628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -551.9569, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột245" type="CSGBox3D" parent="cái viền" unique_id=811699678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -534.05426, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột246" type="CSGBox3D" parent="cái viền" unique_id=1449798536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -514.2083, 17.22572, -286.89465)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột217" type="CSGBox3D" parent="cái viền" unique_id=1815259378]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -296.69962, 17.22572, -16.010527)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột218" type="CSGBox3D" parent="cái viền" unique_id=278262279]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -305.30304, 17.22572, -10.111877)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D184" type="CSGBox3D" parent="cái viền" unique_id=516529370]
+transform = Transform3D(-0.56547314, 0.5131483, 0.6456924, 1.63426e-14, 0.782879, -0.622174, -0.8247666, -0.35182276, -0.44269708, -333.27194, 11.829961, -69.60294)
+size = Vector3(31.809233, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D186" type="CSGBox3D" parent="cái viền" unique_id=1972779188]
+transform = Transform3D(-0.56547314, 0.5131483, 0.6456924, 1.63426e-14, 0.782879, -0.622174, -0.8247666, -0.35182276, -0.44269708, -307.3987, 11.829961, -31.821033)
+size = Vector3(38.729774, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D185" type="CSGBox3D" parent="cái viền" unique_id=657089782]
+transform = Transform3D(0.5654731, -0.51314837, -0.64569247, -1.3027007e-15, 0.782879, -0.622174, 0.82476664, 0.35182273, 0.44269702, -328.10196, 11.829961, -43.128674)
+size = Vector3(81.28397, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột219" type="CSGBox3D" parent="cái viền" unique_id=1594142689]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -306.51727, 17.22572, -30.330002)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột220" type="CSGBox3D" parent="cái viền" unique_id=1504369134]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -317.38434, 17.22572, -46.18008)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột221" type="CSGBox3D" parent="cái viền" unique_id=800995917]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -331.09036, 17.22572, -66.17091)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột222" type="CSGBox3D" parent="cái viền" unique_id=1631115682]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -342.29248, 17.22572, -82.50966)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột223" type="CSGBox3D" parent="cái viền" unique_id=1752245313]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -350.8959, 17.22572, -76.61101)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột224" type="CSGBox3D" parent="cái viền" unique_id=1640380918]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -335.93417, 17.22572, -54.788696)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột225" type="CSGBox3D" parent="cái viền" unique_id=1634976880]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -325.81073, 17.22572, -40.02319)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột226" type="CSGBox3D" parent="cái viền" unique_id=893555448]
+transform = Transform3D(0.56547314, 0, -0.8247667, 0, 1, 0, 0.8247667, 0, 0.56547314, -314.58838, 17.22572, -23.654911)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột207" type="CSGBox3D" parent="cái viền" unique_id=2125611190]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -369.70615, 17.22572, -298.78464)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột208" type="CSGBox3D" parent="cái viền" unique_id=973774132]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -359.3238, 17.22572, -297.775)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D182" type="CSGBox3D" parent="cái viền" unique_id=235399237]
+transform = Transform3D(-0.09679527, -0.61925244, -0.7792028, -3.463514e-09, 0.782879, -0.622174, 0.99530447, -0.06022349, -0.075778954, -377.24216, 11.829961, -222.75645)
+size = Vector3(8.771786, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D187" type="CSGBox3D" parent="cái viền" unique_id=1133350160]
+transform = Transform3D(-0.09679527, -0.61925244, -0.7792028, -3.463514e-09, 0.782879, -0.622174, 0.99530447, -0.06022349, -0.075778954, -373.12958, 11.829961, -265.0443)
+size = Vector3(68.84845, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D183" type="CSGBox3D" parent="cái viền" unique_id=1131580514]
+transform = Transform3D(0.096795365, 0.61925256, 0.7792027, -2.4895986e-08, 0.782879, -0.622174, -0.9953042, 0.06022353, 0.075779006, -363.07452, 11.829961, -257.82712)
+size = Vector3(81.28397, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột209" type="CSGBox3D" parent="cái viền" unique_id=91185637]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -371.38672, 17.22572, -281.50436)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột210" type="CSGBox3D" parent="cái viền" unique_id=337298816]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -373.2469, 17.22572, -262.37698)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột211" type="CSGBox3D" parent="cái viền" unique_id=752155798]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -375.59302, 17.22572, -238.25262)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột212" type="CSGBox3D" parent="cái viền" unique_id=2020944345]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -377.51053, 17.22572, -218.53546)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột213" type="CSGBox3D" parent="cái viền" unique_id=1142292723]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -367.1282, 17.22572, -217.52574)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột214" type="CSGBox3D" parent="cái viền" unique_id=186124794]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -364.56714, 17.22572, -243.86028)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột215" type="CSGBox3D" parent="cái viền" unique_id=394116222]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -362.83423, 17.22572, -261.67886)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột216" type="CSGBox3D" parent="cái viền" unique_id=328995812]
+transform = Transform3D(0.096795395, 0, 0.99530447, 0, 1, 0, -0.99530447, 0, 0.096795395, -360.91324, 17.22572, -281.4316)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột161" type="CSGBox3D" parent="cái viền" unique_id=274087256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150.20897, 17.22572, -99.931946)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D174" type="CSGBox3D" parent="cái viền" unique_id=14845905]
+transform = Transform3D(-0.99999994, -1.01701886e-07, -7.892422e-08, 9.710828e-15, 0.782879, -0.622174, 1.03316026e-07, -0.62217396, -0.78287894, -241.90643, 11.829961, -112.27572)
+size = Vector3(20.488632, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D175" type="CSGBox3D" parent="cái viền" unique_id=1791049560]
+transform = Transform3D(0.99999994, 4.730972e-08, 1.0482758e-08, -1.7763568e-15, 0.782879, -0.622174, -1.5893264e-08, 0.62217396, 0.78287894, -241.7052, 11.829961, -95.62797)
+size = Vector3(20.848667, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột177" type="CSGBox3D" parent="cái viền" unique_id=1715018930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -231.69846, 17.22572, -112.134285)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột184" type="CSGBox3D" parent="cái viền" unique_id=1595787493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -231.65341, 17.22572, -95.771835)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột178" type="CSGBox3D" parent="cái viền" unique_id=735219319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -251.99207, 17.22572, -112.134285)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột179" type="CSGBox3D" parent="cái viền" unique_id=1785135524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -252.21574, 17.22572, -95.76164)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột186" type="CSGBox3D" parent="cái viền" unique_id=1861595774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -252.29927, 17.22572, -91.94998)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D172" type="CSGBox3D" parent="cái viền" unique_id=116890846]
+transform = Transform3D(-0.89588994, 0.27641687, 0.34781423, 1.63426e-14, 0.782879, -0.622174, -0.4442759, -0.55739945, -0.70137334, -288.41946, 11.829961, -130.47986)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D173" type="CSGBox3D" parent="cái viền" unique_id=1489197638]
+transform = Transform3D(0.8958899, -0.27641693, -0.3478143, -1.3027007e-15, 0.782879, -0.622174, 0.44427598, 0.55739945, 0.70137334, -293.16312, 11.829961, -120.881615)
+size = Vector3(81.28397, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột162" type="CSGBox3D" parent="cái viền" unique_id=1547166204]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -252.01459, 17.22572, -112.268654)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột163" type="CSGBox3D" parent="cái viền" unique_id=1578066569]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -268.0775, 17.22572, -120.23433)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột164" type="CSGBox3D" parent="cái viền" unique_id=2016752667]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -285.2944, 17.22572, -128.77225)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột165" type="CSGBox3D" parent="cái viền" unique_id=421338323]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -307.00912, 17.22572, -139.54068)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột166" type="CSGBox3D" parent="cái viền" unique_id=1845677126]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -324.75687, 17.22572, -148.34189)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột167" type="CSGBox3D" parent="cái viền" unique_id=127836202]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -329.39127, 17.22572, -138.99652)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột168" type="CSGBox3D" parent="cái viền" unique_id=1928416301]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -305.68716, 17.22572, -127.24155)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột169" type="CSGBox3D" parent="cái viền" unique_id=1057591324]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -289.64835, 17.22572, -119.28784)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột170" type="CSGBox3D" parent="cái viền" unique_id=332033292]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -271.86853, 17.22572, -110.47076)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột171" type="CSGBox3D" parent="cái viền" unique_id=144037827]
+transform = Transform3D(0.89588994, 0, -0.444276, 0, 1, 0, 0.444276, 0, 0.89588994, -256.7151, 17.22572, -102.95608)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D178" type="CSGBox3D" parent="cái viền" unique_id=1872072386]
+transform = Transform3D(-0.52284414, 0.5303587, 0.6673481, -1.2944483e-08, 0.7828791, -0.6221741, -0.85242844, -0.32530016, -0.40932372, -346.1421, 11.829961, -183.18146)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D179" type="CSGBox3D" parent="cái viền" unique_id=1752460068]
+transform = Transform3D(0.52284425, -0.53035855, -0.6673481, -2.8526452e-08, 0.7828791, -0.6221741, 0.8524284, 0.32530022, 0.40932378, -355.23306, 11.829961, -177.53545)
+size = Vector3(81.45182, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột187" type="CSGBox3D" parent="cái viền" unique_id=1538605756]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -324.98, 17.22572, -148.40894)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột188" type="CSGBox3D" parent="cái viền" unique_id=60400216]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -334.35437, 17.22572, -163.69261)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột189" type="CSGBox3D" parent="cái viền" unique_id=1540947283]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -344.40222, 17.22572, -180.07426)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột190" type="CSGBox3D" parent="cái viền" unique_id=469036207]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -357.075, 17.22572, -200.73555)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột191" type="CSGBox3D" parent="cái viền" unique_id=519231389]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -367.43262, 17.22572, -217.62231)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột192" type="CSGBox3D" parent="cái viền" unique_id=739629307]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -376.3246, 17.22572, -212.16833)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột193" type="CSGBox3D" parent="cái viền" unique_id=1366002061]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -362.4908, 17.22572, -189.61418)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột194" type="CSGBox3D" parent="cái viền" unique_id=1708570870]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -353.1305, 17.22572, -174.35347)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột195" type="CSGBox3D" parent="cái viền" unique_id=1037362489]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -342.75415, 17.22572, -157.43619)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột196" type="CSGBox3D" parent="cái viền" unique_id=952933276]
+transform = Transform3D(0.5228441, 0, -0.85242844, 0, 1, 0, 0.85242844, 0, 0.5228441, -333.91058, 17.22572, -143.01785)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="CSGBox3D176" type="CSGBox3D" parent="cái viền" unique_id=1197614052]
+transform = Transform3D(-0.8326991, -0.34451368, -0.43350005, 1.63426e-14, 0.782879, -0.622174, 0.55372566, -0.5180838, -0.6519027, -290.47818, 11.829961, -79.14438)
+size = Vector3(81.29748, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="CSGBox3D177" type="CSGBox3D" parent="cái viền" unique_id=481093709]
+transform = Transform3D(0.8326992, 0.34451365, 0.43350002, 1.0934276e-10, 0.782879, -0.622174, -0.5537254, 0.5180838, 0.6519027, -284.5377, 11.829961, -70.23714)
+size = Vector3(81.28397, 0.6254883, 0.45117188)
+material = SubResource("StandardMaterial3D_71pa8")
+
+[node name="cột172" type="CSGBox3D" parent="cái viền" unique_id=707034413]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -256.5044, 17.22572, -101.56633)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột173" type="CSGBox3D" parent="cái viền" unique_id=297984933]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -271.43433, 17.22572, -91.63826)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột174" type="CSGBox3D" parent="cái viền" unique_id=1343031694]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -287.43683, 17.22572, -80.99696)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột175" type="CSGBox3D" parent="cái viền" unique_id=1738161316]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -307.61993, 17.22572, -67.57567)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột176" type="CSGBox3D" parent="cái viền" unique_id=258069293]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -324.36234, 17.22572, -56.404446)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột180" type="CSGBox3D" parent="cái viền" unique_id=486548445]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -318.5581, 17.22572, -47.920086)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột181" type="CSGBox3D" parent="cái viền" unique_id=1427758761]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -296.3076, 17.22572, -62.570953)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột182" type="CSGBox3D" parent="cái viền" unique_id=1522903860]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -281.40005, 17.22572, -72.48413)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột183" type="CSGBox3D" parent="cái viền" unique_id=148072314]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -264.87433, 17.22572, -83.47336)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="cột185" type="CSGBox3D" parent="cái viền" unique_id=2142224466]
+transform = Transform3D(0.8326993, 0, 0.5537255, 0, 1, 0, -0.5537255, 0, 0.8326993, -250.7897, 17.22572, -92.83928)
+size = Vector3(0.376, 10.992453, 0.376)
+material = SubResource("StandardMaterial3D_bgf7x")
+
 [node name="cột94" type="CSGBox3D" parent="cái viền" unique_id=1000266322]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.58117, 17.22572, -83.62412)
 size = Vector3(0.376, 10.992453, 0.376)
@@ -3244,3 +5437,171 @@ material = SubResource("StandardMaterial3D_bgf7x")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.013134, 5.668004, -4.108764)
 size = Vector3(0.376, 10.106, 0.376)
 material = SubResource("StandardMaterial3D_bgf7x")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1467555423]
+transform = Transform3D(1, 0, 0, 0, 0.03010592, 0.99954677, 0, -0.99954677, 0.03010592, 0, 201.22925, -18.810776)
+light_color = Color(0.6528438, 0.31822228, 0.38399228, 1)
+spot_range = 121.13364
+
+[node name="OmniLight3D" type="OmniLight3D" parent="SpotLight3D" unique_id=845646801]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 70.66198, 3.9378338, -181.54175)
+light_color = Color(0.1828286, 0.24986517, 0.24134558, 1)
+light_energy = 8.889
+omni_range = 1134.9862
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="SpotLight3D" unique_id=1818818868]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -169.69492, -62.024574, -180.61276)
+light_color = Color(0.1828286, 0.24986517, 0.24134558, 1)
+light_energy = 16.0
+omni_range = 1134.9862
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="SpotLight3D" unique_id=580889261]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -169.69492, 140.80295, -185.98505)
+light_color = Color(0.1828286, 0.24986517, 0.24134558, 1)
+light_energy = 16.0
+omni_range = 1134.9862
+
+[node name="Node3D2" type="Node3D" parent="." unique_id=241512427]
+transform = Transform3D(-6.5567085e-10, 0, 0.015, 0, 0.015, 0, -0.015, 0, -6.5567085e-10, 66.4571, 0.5972402, 17.247845)
+
+[node name="Sketchfab_Scene" parent="Node3D2" unique_id=1312261822 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, 0, 0, 0)
+
+[node name="Sketchfab_Scene4" parent="Node3D2" unique_id=83396232 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.842171e-14, 0, 1, 0, -2.842171e-14, 0, 1, 1396.4568, 0, -1148.0491)
+
+[node name="Sketchfab_Scene12" parent="Node3D2" unique_id=1959134848 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 7.81597e-14, 0, 1, 0, -7.81597e-14, 0, 1, 2868.249, 542.75024, -1638.258)
+
+[node name="Sketchfab_Scene13" parent="Node3D2" unique_id=1507716581 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.4210855e-13, 0, 1, 0, -1.4210855e-13, 0, 1, 6944.79, 805.9226, -759.6526)
+
+[node name="Sketchfab_Scene14" parent="Node3D2" unique_id=728073588 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.5276669e-13, 0, 1, 0, -1.5276669e-13, 0, 1, 6944.79, 805.9226, -2080.8157)
+
+[node name="Sketchfab_Scene6" parent="Node3D2" unique_id=1181238271 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 4.973799e-14, 0, 1, 0, -4.973799e-14, 0, 1, 1396.4574, 0, 1441.3359)
+
+[node name="Sketchfab_Scene7" parent="Node3D2" unique_id=1297257785 instance=ExtResource("4_p5pve")]
+transform = Transform3D(-4.3711317e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711317e-08, 1086.1659, 0, 2332.189)
+
+[node name="Sketchfab_Scene8" parent="Node3D2" unique_id=100581182 instance=ExtResource("4_p5pve")]
+transform = Transform3D(-4.3711307e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711307e-08, 2538.3398, 0, 2332.189)
+
+[node name="Sketchfab_Scene23" parent="Node3D2" unique_id=1828457947 instance=ExtResource("4_p5pve")]
+transform = Transform3D(-4.3711285e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711285e-08, 6508.1123, 0, 1628.1157)
+
+[node name="Sketchfab_Scene15" parent="Node3D2" unique_id=1676846326 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.2789769e-13, 0, 1, 0, -1.2789769e-13, 0, 1, 4830.751, 0, 1534.8394)
+
+[node name="Sketchfab_Scene16" parent="Node3D2" unique_id=1354747308 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.2789769e-13, 0, 1, 0, -1.2789769e-13, 0, 1, 4829.1934, 0, 4.447754)
+
+[node name="Sketchfab_Scene20" parent="Node3D2" unique_id=465188486 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.3855583e-13, 0, 1, 0, -1.3855583e-13, 0, 1, 4829.1934, 0, -1514.2002)
+
+[node name="Sketchfab_Scene21" parent="Node3D2" unique_id=644461857 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.4566126e-13, 0, 1, 0, -1.4566126e-13, 0, 1, 4829.1943, 0, -3478.7622)
+
+[node name="Sketchfab_Scene22" parent="Node3D2" unique_id=505534610 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.4921397e-13, 0, 1, 0, -1.4921397e-13, 0, 1, 4829.195, 0, -5698.8164)
+
+[node name="Sketchfab_Scene24" parent="Node3D2" unique_id=306944330 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.1316282e-13, 0, 1, 0, -2.1316282e-13, 0, 1, 512.4561, 750.8973, -12546.194)
+
+[node name="Sketchfab_Scene25" parent="Node3D2" unique_id=512745746 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.309264e-13, 0, 1, 0, -2.309264e-13, 0, 1, 512.4565, 750.89746, -14661.148)
+
+[node name="Sketchfab_Scene26" parent="Node3D2" unique_id=611836764 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.3803182e-13, 0, 1, 0, -2.3803182e-13, 0, 1, 512.4568, 750.8976, -16664.035)
+
+[node name="Sketchfab_Scene27" parent="Node3D2" unique_id=1779574627 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.4513724e-13, 0, 1, 0, -2.4513724e-13, 0, 1, 512.4571, 750.8976, -18792.383)
+
+[node name="Sketchfab_Scene28" parent="Node3D2" unique_id=2078045344 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.5579538e-13, 0, 1, 0, -2.5579538e-13, 0, 1, 1307.2545, 750.8976, -18880.754)
+
+[node name="Sketchfab_Scene29" parent="Node3D2" unique_id=841031278 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.629008e-13, 0, 1, 0, -2.629008e-13, 0, 1, 1307.2549, 750.8976, -16807.668)
+
+[node name="Sketchfab_Scene30" parent="Node3D2" unique_id=1508535031 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.7355895e-13, 0, 1, 0, -2.7355895e-13, 0, 1, 1307.255, 750.8976, -14772.789)
+
+[node name="Sketchfab_Scene31" parent="Node3D2" unique_id=64160094 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 2.9487524e-13, 0, 1, 0, -2.9487524e-13, 0, 1, 1307.2552, 750.8976, -12701.799)
+
+[node name="Sketchfab_Scene17" parent="Node3D2" unique_id=845282749 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.3500312e-13, 0, 1, 0, -1.3500312e-13, 0, 1, 4140.311, 0, 4.4472656)
+
+[node name="Sketchfab_Scene18" parent="Node3D2" unique_id=1898579481 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.4210855e-13, 0, 1, 0, -1.4210855e-13, 0, 1, 4140.3115, 0, -2639.4966)
+
+[node name="Sketchfab_Scene19" parent="Node3D2" unique_id=2005191836 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 1.4566126e-13, 0, 1, 0, -1.4566126e-13, 0, 1, 4140.312, 0, -3872.6033)
+
+[node name="Sketchfab_Scene10" parent="Node3D2" unique_id=1445476513 instance=ExtResource("4_p5pve")]
+transform = Transform3D(-1, 0, 8.742268e-08, 0, 1, 0, -8.742268e-08, 0, -1, 4907.4517, 0, 3149.0547)
+
+[node name="Sketchfab_Scene11" parent="Node3D2" unique_id=149198288 instance=ExtResource("4_p5pve")]
+transform = Transform3D(-1, 0, 8.742268e-08, 0, 1, 0, -8.742268e-08, 0, -1, 7700.3857, 0, 5252.008)
+
+[node name="Sketchfab_Scene2" parent="Node3D2" unique_id=1255302843 instance=ExtResource("4_p5pve")]
+transform = Transform3D(1, 0, 7.1054274e-15, 0, 1, 0, -7.1054274e-15, 0, 1, 0.00024414063, 0, -1166.4844)
+
+[node name="Sketchfab_Scene3" parent="Node3D2" unique_id=45513306 instance=ExtResource("5_urblq")]
+transform = Transform3D(-21.000002, 0, -6.675169e-07, 0, 21.000002, 0, 6.675169e-07, 0, -21.000002, 4528.4443, 2.175476, -4726.2817)
+
+[node name="Sketchfab_Scene5" parent="Node3D2" unique_id=1202443938 instance=ExtResource("5_urblq")]
+transform = Transform3D(-21.000002, 0, -6.675169e-07, 0, 21.000002, 0, 6.675169e-07, 0, -21.000002, 8161.1826, 744.22345, -14491.897)
+
+[node name="Sketchfab_Scene9" parent="Node3D2" unique_id=1045638477 instance=ExtResource("5_urblq")]
+transform = Transform3D(1.609908, 0, 20.938202, 0, 21.000006, 0, -20.938202, 0, 1.609908, 19117.168, 743.0178, -28918.152)
+
+[node name="Sketchfab_Scene32" parent="Node3D2" unique_id=1632695744 instance=ExtResource("5_urblq")]
+transform = Transform3D(20.999407, 0, 0.1578256, 0, 21.000006, 0, -0.1578256, 0, 20.999407, 20620.842, 743.0178, -32260.688)
+
+[node name="Sketchfab_Scene33" parent="Node3D2" unique_id=770912311 instance=ExtResource("5_urblq")]
+transform = Transform3D(-21.000002, 0, -6.675169e-07, 0, 21.000002, 0, 6.675169e-07, 0, -21.000002, 945.7774, 744.22345, -20474.344)
+
+[node name="Sketchfab_Scene34" parent="Node3D2" unique_id=1273849002 instance=ExtResource("5_urblq")]
+transform = Transform3D(-12.957389, 0, 16.525923, 0, 21.000004, 0, -16.525923, 0, -12.957389, 2032.6423, 744.22345, -24490.875)
+
+[node name="Sketchfab_Scene35" parent="Node3D2" unique_id=1947246429 instance=ExtResource("5_urblq")]
+transform = Transform3D(-12.108447, 0, 17.15767, 0, 21.000002, 0, -17.15767, 0, -12.108447, 6435.206, 744.22345, -27509.484)
+
+[node name="Sketchfab_Scene36" parent="Node3D2" unique_id=1054955085 instance=ExtResource("5_urblq")]
+transform = Transform3D(-21.000002, 0, -6.675169e-07, 0, 21.000002, 0, 6.675169e-07, 0, -21.000002, 1122.3042, 2.175476, -2371.0693)
+
+[node name="Sketchfab_Scene37" parent="Node3D2" unique_id=546015262 instance=ExtResource("5_urblq")]
+transform = Transform3D(1.5854562e-06, 0, -21.000002, 0, 21.000002, 0, 21.000002, 0, 1.5854562e-06, 4150.8394, 2.175476, -5119.91)
+
+[node name="Sketchfab_Scene38" parent="Node3D2" unique_id=2094830288 instance=ExtResource("6_iw27f")]
+transform = Transform3D(63.505062, 0, -20.286753, 0, 66.66667, 0, 20.286753, 0, 63.505062, 4486.672, 131.06213, -4715.2773)
+
+[node name="Sketchfab_Scene39" parent="Node3D2" unique_id=300096509 instance=ExtResource("6_iw27f")]
+transform = Transform3D(63.505062, 0, -20.286753, 0, 66.66667, 0, 20.286753, 0, 63.505062, 4492.1104, 131.06213, -5462.245)
+
+[node name="Sketchfab_Scene40" parent="Node3D2" unique_id=434791564 instance=ExtResource("6_iw27f")]
+transform = Transform3D(63.505062, 0, -20.286753, 0, 66.66667, 0, 20.286753, 0, 63.505062, 8100.416, 852.289, -14476.326)
+
+[node name="Sketchfab_Scene41" parent="Node3D2" unique_id=542994944 instance=ExtResource("5_urblq")]
+transform = Transform3D(2.5042237e-07, 0, 21.000002, 0, 21.000002, 0, -21.000002, 0, 2.5042237e-07, 9419.136, 744.22345, -8654.974)
+
+[node name="Sketchfab_Scene42" parent="Node3D2" unique_id=1320671818 instance=ExtResource("6_iw27f")]
+transform = Transform3D(-20.286755, 0, -63.505062, 0, 66.66667, 0, 63.505062, 0, -20.286755, 9403.565, 852.289, -8715.74)
+
+[node name="Sketchfab_Scene43" parent="Node3D2" unique_id=1389756416 instance=ExtResource("6_iw27f")]
+transform = Transform3D(35.575783, 0, -56.380928, 0, 66.66667, 0, 56.380928, 0, 35.575783, 1495.6383, 832.4295, -20302.305)
+
+[node name="Sketchfab_Scene44" parent="Node3D2" unique_id=988957675 instance=ExtResource("6_iw27f")]
+transform = Transform3D(-55.69731, 0, 36.63681, 0, 66.66667, 0, -36.63681, 0, -55.69731, 1993.5234, 832.4295, -24282.39)
+
+[node name="Sketchfab_Scene45" parent="Node3D2" unique_id=1328125691 instance=ExtResource("6_iw27f")]
+transform = Transform3D(-31.91392, 0, -58.531597, 0, 66.66667, 0, 58.531597, 0, -31.91392, 6563.7383, 832.4295, -26942.328)
+
+[node name="Sketchfab_Scene46" parent="Node3D2" unique_id=846037740 instance=ExtResource("6_iw27f")]
+transform = Transform3D(-65.56193, 1.5968062e-06, 12.086314, -6.6228147, 55.76697, -35.925312, -10.110257, -36.53067, -54.84285, 18737.768, 803.73376, -28451.25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1885470392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.75557, 15.104254, -100.09198)
+size = Vector3(22.568726, 5.564209, 1)

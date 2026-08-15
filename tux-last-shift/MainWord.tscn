@@ -3,20 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://d0g0hrwt6j8af" path="res://player.tscn" id="1_k68hb"]
 [ext_resource type="PackedScene" uid="uid://d1besj5da5v28" path="res://map.tscn" id="2_nfn05"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_315gg"]
-size = Vector3(326.5925, 2, 121.09601)
-
 [node name="MainWorld" type="Node3D" unique_id=552577611]
 
-[node name="đệm lót để tét" type="StaticBody3D" parent="." unique_id=506837186]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.849197, -31.113194, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="đệm lót để tét" unique_id=751187251]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.391842, 66.07802, -7.163513)
-shape = SubResource("BoxShape3D_315gg")
-
 [node name="player" parent="." unique_id=45759446 instance=ExtResource("1_k68hb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.83468, 1.5112414, -6.459685)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.783173, 0.8373718, -6.478859)
 
 [node name="map" parent="." unique_id=706484653 instance=ExtResource("2_nfn05")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4964676, 0, -17.20641)
